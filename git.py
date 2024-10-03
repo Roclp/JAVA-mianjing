@@ -6,7 +6,7 @@ def git_process(folder_path):
     for root, dirs, files in os.walk(folder_path):
         for file in files:
             file_path = os.path.join(root, file)
-
+            print(file)
             try:
                 # 执行 git add
                 subprocess.run(['git', 'add', file_path], check=True)
