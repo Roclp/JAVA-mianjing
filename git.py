@@ -6,7 +6,7 @@ def git_process(folder_path):
     for root, dirs, files in os.walk(folder_path):
         for file in files:
             file_path = os.path.join(root, file)
-            print(file)
+            print(file_path)
             try:
                 # 获取不带扩展名的文件名
                 filename_without_extension = os.path.splitext(file)[0]
